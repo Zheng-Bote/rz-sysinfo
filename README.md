@@ -1,10 +1,10 @@
 <div id="top" align="center">
 
-# rz-footer
+# rz-sysinfo
 
-A Web Component for HTML footer
+A Web Component to provide some Sysinfo
 
-defines a 3-column footer with contact|copyright|legal-notice
+provides some sys info as JSON data
 
 </div>
 
@@ -14,41 +14,30 @@ defines a 3-column footer with contact|copyright|legal-notice
 
 ## Version
 
-v0.2.0
+v0.1.0
 
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
-Icons:
-[Ionic Open Source Icons](https://ionic.io/ionicons)
 
 ## API Reference
 
 #### Parameters
 
 ```
-    <rz-footer></rz-footer>
-```
-
-```
-    <rz-footer
-      name="ZHENG Robert"
-      created="2016"
-      version="v0.2.0"
-      link_left="/contact.html"
-      link_right="/legal-notice.html"
+    <rz-sysinfo
+      network_info="y"
+      sys_info="y"
+      browser_info="y"
     >
-    </rz-footer>
+    </rz-sysinfo>
 ```
 
-| Parameter    | Type     | Description                                                             |
-| :----------- | :------- | :---------------------------------------------------------------------- |
-| `name`       | `string` | **Optional**. "name-of-copyright-holder" default: "ZHENG Robert"        |
-| `created`    | `string` | **Optional**. "YYYY" default: "2016"                                    |
-| `version`    | `string` | **Optional**. "v0.0.0" default: "v0.1.0"                                |
-| `link_left`  | `string` | **Optional**. "link-to-contact-page" default: "/contact.html"           |
-| `link_right` | `string` | **Optional**. "link-to-legal-notice-page" default: "/legal-notice.html" |
+| Parameter      | Type     | Description |
+| :------------- | :------- | :---------- | --- |
+| `network_info` | `string` | y           | n   |
+| `sys_info`     | `string` | y           | n   |
+| `browser_info` | `string` | y           | n   |
 
 ## Installation
 
@@ -60,10 +49,9 @@ used folder structure
 │   ├── css
 │   │   └── index.css
 │   ├── img
-│   │   ├── information-outline.svg
-│   │   ├── mail-open-outline.svg
+│   │   ├── Screenshot
 │   └── js
-│       └── rz-footer.js
+│       └── rz-sysinfo.js
 ├── favicon.ico
 └── index.html
 
@@ -81,7 +69,7 @@ used folder structure
 
     <title>Web Component</title>
 
-    <meta name="description" content="Web Component for HTML footer" />
+    <meta name="description" content="Web Component for some sys info" />
     <meta name="version" content="v0.1.0" />
     <meta name="author" content="ZHENG Robert" />
     <meta name="date" content="2016-01-02T01:30:00+01:00" />
@@ -89,29 +77,52 @@ used folder structure
     <link rel="alternate icon" href="/assets/favicon.ico" />
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
 
-    <link href="./assets/css/index.css" rel="stylesheet" type="text/css" />
+    <link
+      href="./assets/css/index.css"
+      rel="stylesheet"
+      type="text/css"
+      preload
+    />
   </head>
 
   <body id="body">
-    <main id="main">
-      <h1>Hello World 你好世界 Hola Mundo Привет мир Hallo Welt!</h1>
-    </main>
-    <rz-footer
-      name="ZHENG Robert"
-      created="2016"
-      version="v0.2.0"
-      link_left="/contact.html"
-      link_right="/legal-notice.html"
-    ></rz-footer>
+    <main id="body">
+      <h1>Web Component &raquo; rz-sysinfo &laquo;</h1>
+      <article>
+        <h2>A Web Component to provide some Sysinfo</h2>
+        <p class="brief">provides some sys info as JSON data</p>
+        <section>
+          <h3>default</h3>
 
-    <script src="./assets/js/rz-footer.js"></script>
+<pre>
+&lt;rz-sysinfo id="sysinfo"
+  network_info="y"
+  sys_info="y"
+  browser_info="y"
+  data-result="{&quot;effectiveType&quot;:&quot;4g&quot;,&quot;rtt&quot;:null,&quot;downLink&quot;:10,&quot;downlinkMax&quot;:null,&quot;saveData&quot;:null,&quot;type&quot;:null,&quot;userLang&quot;:&quot;de&quot;,&quot;mem&quot;:8,&quot;cores&quot;:6}"&gt;
+&lt;/rz-sysinfo&gt;
+</pre>
+
+<h4>Syntax</h4>
+        <p>
+            <pre class="code">&lt;rz-sysinfo id="sysinfo" network_info="y" sys_info="y" browser_info="y"&gt;&lt;/rz-sysinfo&gt;</pre>
+        </p>
+      </section>
+
+      </article>
+    </main>
+
+    <rz-sysinfo id="sysinfo" network_info="y" sys_info="y" browser_info="y"></rz-sysinfo>
+    <script src="./assets/js/rz-sysinfo.js" defer></script>
+
   </body>
 </html>
+
 ```
 
 ## Screenshots
 
-  <img src="https://raw.githubusercontent.com/Zheng-Bote/rz-footer/main/assets/img/Screenshot.png" width="100%" height="auto" />
+  <img src="https://raw.githubusercontent.com/Zheng-Bote/rz-sysinfo/main/assets/img/Screenshot.png" width="100%" height="auto" />
 
 ## Used By
 
