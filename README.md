@@ -34,7 +34,7 @@ v0.1.0
 ```
 
 | Parameter      | Type     | Description |
-| :------------- | :------- | :---------- | --- |
+| :------------- | :------- | :---------- | :-- |
 | `network_info` | `string` | y           | n   |
 | `sys_info`     | `string` | y           | n   |
 | `browser_info` | `string` | y           | n   |
