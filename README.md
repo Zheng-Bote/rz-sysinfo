@@ -33,7 +33,7 @@ v0.1.0
     </rz-sysinfo>
 ```
 
-| Parameter      | Type     | Description |
+| Parameter      | Type     | Description |     |
 | :------------- | :------- | :---------- | :-- |
 | `network_info` | `string` | y           | n   |
 | `sys_info`     | `string` | y           | n   |
