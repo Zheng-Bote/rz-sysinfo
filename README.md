@@ -33,11 +33,11 @@ v0.1.0
     </rz-sysinfo>
 ```
 
-| Parameter      | Type     | Description |     |
-| :------------- | :------- | :---------- | :-- |
-| `network_info` | `string` | y           | n   |
-| `sys_info`     | `string` | y           | n   |
-| `browser_info` | `string` | y           | n   |
+| Parameter      | Type     | Description |
+| :------------- | :------- | :---------- |
+| `network_info` | `string` | "y" or "n"  |
+| `sys_info`     | `string` | "y" or "n"  |
+| `browser_info` | `string` | "y" or "n"  |
 
 ## Installation
 
